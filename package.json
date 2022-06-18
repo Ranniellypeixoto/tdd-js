@@ -1,0 +1,14 @@
+{
+  "name": "questoes",
+  "version": "1.0.0",
+  "description": "**Questão 1:** Um aluno tirou a nota 7.0 no primeiro bimestre, 6.5 no segundo bimestre, 6.0 no terceiro e 6.7 no quarto bimestre. Considerando que a média para ser aprovado é 7, implemente um algoritmo que calcule a média e exiba na tela se o aluno passou foi aprovado ou se foi reprovado.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.1"
+  }
+}
