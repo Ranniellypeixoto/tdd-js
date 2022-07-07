@@ -19,7 +19,7 @@ function pagarConta(nome, agua, energia, lanche, saldoEmConta) {
   const despesas = (agua + energia + lanche)
   const saldo = (saldoEmConta - despesas)
 
-  if (saldo >= 1) {
+  if (saldo >= 0) {
     return `${nome}, conta paga com sucesso, seu saldo é R$ ${saldo}`
   } else {
     return `${nome}, seu saldo é insuficiente, falta R$ ${saldo} para conseguir efetuar o pagamento`

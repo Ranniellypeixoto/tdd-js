@@ -9,7 +9,7 @@ juvenil B = 14-17 anos
 adulto = maiores de 18 anos
 */
 
-function classificarNadador(idade){
+function classificarNadador(idade) {
     if (idade >= 5 && idade <= 7) {
         return "Infantil A";
     } else if (idade >= 8 && idade <= 10) {

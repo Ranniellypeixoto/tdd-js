@@ -8,7 +8,7 @@ b) - Se o perfil é igual ADMINISTRADOR então deve retornar uma array de funcio
 
 const cadastrarCliente = (nome = 0, email = 0, cpf = 0) => {
     mensagem = "Cadastro realizado com sucesso!"
-    
+
     function validarEmail(email) {
         var re = /\S+@\S+\.\S+/;
         return re.test(email);

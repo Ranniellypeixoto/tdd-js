@@ -19,7 +19,7 @@ test("Pagamento de conta saldo negativo", () => {
     energia = 50.00
     lanche = 26.00
     saldo = -76
-    
+
     resultado = pagarConta(nome, agua, energia, lanche, saldoEmConta)
     expect(resultado).toBe(`${nome}, seu saldo é insuficiente, falta R$ ${saldo} para conseguir efetuar o pagamento`);
 })

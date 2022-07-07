@@ -21,19 +21,19 @@ opcional.
 }*/
 function verificarIdadeVoto(idade, alfabetizado) {
 
-    if (alfabetizado) {
-      if (idade >= 0 && idade <= 15) {
-        return "Não tem idade para votar"
-      } else if (idade >= 16 && idade <= 17) {
-        return "Idade para votar, voto facultativo"
-      } else if (idade >= 18 && idade <= 70) {
-        return "voto obrigatório"
-      } else {
-        return "Voto não obrigatório"
-      }
+  if (alfabetizado) {
+    if (idade >= 0 && idade <= 15) {
+      return "Não tem idade para votar"
+    } else if (idade >= 16 && idade <= 17) {
+      return "Idade para votar, voto facultativo"
+    } else if (idade >= 18 && idade <= 70) {
+      return "voto obrigatório"
     } else {
-      return "voto facultativo"
+      return "Voto não obrigatório"
     }
+  } else {
+    return "voto facultativo"
   }
-  
+}
+
 module.exports = verificarIdadeVoto;

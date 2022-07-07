@@ -32,7 +32,7 @@ test("Cadastrar cliente sem cpf preenchido", () => {
     expect(resultado).toBe("O CPF deve ser informado");
 })
 
-test("Cadastrar cliente com email preenchido inccorretamente", () => {
+test("Cadastrar cliente com email preenchido incorretamente", () => {
     nome = "Rannielly"
     email = "ranniellypalvesgmail.com"
     cpf = "06605757440"
@@ -40,7 +40,7 @@ test("Cadastrar cliente com email preenchido inccorretamente", () => {
     expect(resultado).toBe("E-mail inválido!");
 })
 
-test("Cadastrar cliente com CPF preenchido inccorretamente", () => {
+test("Cadastrar cliente com CPF preenchido incorretamente", () => {
     nome = "Rannielly"
     email = "ranniellypalves@gmail.com"
     cpf = "0660575744"

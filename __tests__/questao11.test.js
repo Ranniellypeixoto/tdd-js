@@ -12,7 +12,7 @@ test("Listar funcionalidades do usuário NORMAL", () => {
     expect(resultado).toBe("LISTAR, VISUALIZAR");
 })
 
-test("Listar funcionalidades do usuário NORMAL", () => {
+test("Listar funcionalidades do usuário OUTROUSUARIO", () => {
     usuario = "OUTROUSUARIO"
     resultado = obterPermissaoPorPerfil(usuario)
     expect(resultado).toBe("Usuário não cadastrado");

@@ -11,7 +11,7 @@ ARROW FUNCTION
 // let novoItem = 'laranja'
 
 const atualizarCarrinho = ((novoItem, carrinho) => {
-    if(!carrinho.includes(novoItem)){
+    if (!carrinho.includes(novoItem)) {
         carrinho.push(novoItem)
     }
     return carrinho
