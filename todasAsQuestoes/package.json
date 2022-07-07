@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.25"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.3.0"
+  }
+}
