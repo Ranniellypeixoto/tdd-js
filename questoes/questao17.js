@@ -7,9 +7,8 @@ a) Desenvolva uma função que receba como parâmetro esse texto inteiro e verif
 
 function hakerSenha(senhasTeste) {
     const senhaCorreta = "amoviajar"
-    if (senhasTeste.split(" ").includes(senhaCorreta)) {
+    if (senhasTeste.split(" ").includes(senhaCorreta))
         return "voce acessou a conta!"
-    }
 }
 
 module.exports = hakerSenha;

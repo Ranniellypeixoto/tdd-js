@@ -5,9 +5,8 @@ parar de aquecer”.
 */
 
 function pararDeAquecer(tempo, cacenlar) {
-  if (tempo == cacenlar) {
-    return "O botão cancelar foi pressionado, parar de aquecer"
-  }
+  if ( tempo == cacenlar ) 
+    return 'O botão cancelar foi pressionado, parar de aquecer'
 }
 
 module.exports = pararDeAquecer;

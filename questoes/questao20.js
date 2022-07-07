@@ -3,11 +3,8 @@
  Dica pesquise na internet sobre o uso de datas e dias da semana em javascript.*/
 
 const enviarMensagem = (dia, hora) => {
-
-    if (dia == "Segunda" && hora == 8) {
+    if (dia == "Segunda" && hora == 8)
         return "Tenha uma ótima semana pessoal"
-    }
-
 }
 
 module.exports = enviarMensagem;

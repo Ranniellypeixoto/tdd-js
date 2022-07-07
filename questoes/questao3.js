@@ -29,7 +29,7 @@ function verificarIdadeVoto(idade, alfabetizado) {
     } else if (idade >= 18 && idade <= 70) {
       return "voto obrigatório"
     } else {
-      return "Voto não obrigatório"
+      return "voto não obrigatório"
     }
   } else {
     return "voto facultativo"
