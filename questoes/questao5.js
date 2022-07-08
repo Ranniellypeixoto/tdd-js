@@ -80,3 +80,20 @@ for (var i = 0; i < carrinho.length; i++) {
 console.log("Total:" + totalCompra.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
 
 console.log(`Monique gastouR$ ${totalCompra}`)
+
+
+
+
+class Compra {
+    calcularTotal(produtos){
+        let total = 0
+        for (let index = 0; index < produtos.length; index++) {
+            const produto = produtos[index];
+            total += produto.preco
+            
+        }
+        return total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+}
+
+module.exports = Compra;
