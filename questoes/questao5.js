@@ -4,8 +4,31 @@ Na sacola de Dimitri tinha: 12 bananas que ele comprou por R$ 2,50; 1 abacaxi qu
 Já na sacola de Monique tinha 10 bananas que custou R$ 2,00; 6 tomates que foi R$ 5,00, 2 abacaxi R$ 5,00 e 10 morangos que custou R $10,00. 
 Implemente um algoritmo que mostre quanto cada um gastou
 */
+class Compra {
+    calcularTotal(produtos) {
+        let total = 0
+        for (let index = 0; index < produtos.length; index++) {
+            const produto = produtos[index];
+            total += produto.preco
+        }
+        return total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
 
+    calcularTotalv2(produtos) {
+        return produtos.map(produto => produto.preco)
+            .reduce((a, b) => a + b)
+            .toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+    }
 
+    calcularTotalProdutos(produtos) {
+        return produtos.map(produto => produto.qtd)
+            .reduce((a, b) => a + b)
+    }
+}
+
+module.exports = Compra;
+
+/*
 var carrinho = new Array();
 carrinho.push(["Banana", 0.21, 12]);
 carrinho[1] = ["Abacaxi", 2.78, 1];
@@ -80,3 +103,4 @@ for (var i = 0; i < carrinho.length; i++) {
 console.log("Total:" + totalCompra.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
 
 console.log(`Monique gastouR$ ${totalCompra}`)
+*/
